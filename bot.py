@@ -5,7 +5,7 @@ from auth import CLIENT_ID, CLIENT_SECRET, PASSWORD, USERNAME
 
 reddit = praw.Reddit(client_id=CLIENT_ID, client_secret=CLIENT_SECRET,
                      password=PASSWORD, username=USERNAME,
-                     user_agent='script to wish users happy cake day')
+                     user_agent='happy cake day bot v1.0 by /u/happy-cake-day-bot-')
 
 for comment in reddit.subreddit('all').stream.comments():
     today_utc = datetime.datetime.now()
